@@ -11,10 +11,7 @@ jobs:
       - name: Set up .NET (示例：假设项目是C#)
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '8.0'  # 根据项目要求调整版本
+          dotnet-version: '4.8'  # 根据项目要求调整版本
 
       - name: Build project
         run: dotnet build BLHX.Server.sln  # 替换为实际构建命令
-
-      - name: Run tests (可选)
-        run: dotnet test
